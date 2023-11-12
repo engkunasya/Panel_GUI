@@ -8,6 +8,7 @@ const useLogout = () => {
     localStorage.removeItem("user");
 
     // dispatch logout action
+    // always think dispatch as global declaration, a MUST MUST when working with crazy context.
     dispatch({ type: "LOGOUT" });
   };
 

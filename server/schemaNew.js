@@ -6,25 +6,33 @@ const Schema = mongoose.Schema
 
 const UGSchema = new Schema({
     email: {
+        type: String,
+        required: true,
+        unique: true
+      },
+    name: {
+        type: String,
+        required: true,
+      },
+    picture: {
       type: String,
-      required: true,
-      unique: true
+      required: true
     },
 })
 
 // staticc signup method
 // ----> arrow async function vs declaration async function    
-UGSchema.statics.signup = async function (email){
+UGSchema.statics.signup = async function (email, name, picture){
 
-    const user = await this.findOne ({ email })
+    const newUser= await this.findOne ({ email })
 
     // ECMA RULE: Always remember about '==/===' vs '=' in TYPE VS VALUE
-    if(user == null) {
-     await this.create({email})
+    if(newUser == null) {
+     await this.create({email, name, picture})
     }
   
-    if(user) {
-        return user
+    if(newUser) {
+        return newUser
 
     }
     

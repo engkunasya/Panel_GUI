@@ -73,15 +73,15 @@ res.status(200).json(user)
 
 // 5. SIGN UP USER (SOCIAL LOGIN TOO)
 const signupUser = async (req, res) => {
-  const {email} = req.body
+  const {email, name, picture} = req.body
 
   try {
-     const user = await UGoogle.signup(email)
+     const user = await UGoogle.signup(email, name, picture)
      console.log(user)
 
   
 
-     res.status(200).json({email})
+     res.status(200).json({email, name, picture})
   } catch (error) {
      res.status(400).json({error: error.message})
   }

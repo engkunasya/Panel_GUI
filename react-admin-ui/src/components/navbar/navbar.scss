@@ -11,7 +11,28 @@
     display: flex;
     align-items: center;
     font-weight: bold;
-    gap: 10px;
+    gap: 15px;
+    margin-left: 5px;
+
+    .ether{
+      width: 40px;
+      height: 60x;
+      animation: rotation 5s infinite linear;
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    .span-text-logo{
+      display: flex;
+      flex-direction: column;
+     
+    }
+   
   }
   .icons {
     display: flex;

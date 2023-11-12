@@ -9,9 +9,12 @@ const TopBox = () => {
         {topDealUsers.map((user) => (
           <div className="listItem" key={user.id}>
             <div className="user">
-              <img src={user.img} alt="" />
+              <img src={user.img} alt="" className="userimg" />
               <div className="userTexts">
-                <span className="username">{user.username}</span>
+                <div className="userVerified">
+                  <span className="userName">{user.username}</span>
+                  <img src={user.verified} alt="" className="verifiedTick" />
+                </div>
                 <span className="email">{user.email}</span>
               </div>
             </div>

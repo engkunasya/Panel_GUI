@@ -3,11 +3,15 @@ import "./Menu.scss";
 import { menu } from "../../data";
 
 const Menu = () => {
+  function handleLogout() {
+    localStorage.removeItem("user");
+    location.reload();
+  }
   return (
     <div className="menu">
       {menu.map((item) => (
-        <div className="item" key={item.id}>
-          <span className="title">{item.title}</span>
+        <div className="Parentitem" key={item.id}>
+          <span className="Parenttitle">{item.title}</span>
           {item.listItems.map((listItem) => (
             <Link to={listItem.url} className="listItem" key={listItem.id}>
               <img src={listItem.icon} alt="" />
@@ -16,6 +20,15 @@ const Menu = () => {
           ))}
         </div>
       ))}
+      {/* // change account */}
+      <div className="Parentitem2">
+        <Link to={"/"} className="listItemA">
+          <span className="listItemTitleA">More</span>
+        </Link>
+        <Link to={"/"} onClick={handleLogout} className="listItemB">
+          <span className="listItemTitleA">Logout</span>
+        </Link>
+      </div>
     </div>
   );
 };

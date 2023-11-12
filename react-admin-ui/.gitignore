@@ -13,6 +13,7 @@ dist-ssr
 *.local
 package-lock.json
 test.js
+redux
 
 
 # Editor directories and files

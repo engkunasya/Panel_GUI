@@ -1,54 +1,35 @@
-import { createContext, useEffect, useReducer } from "react";
+import { createContext, useReducer } from "react";
+import { ReactNode } from "react";
 import React from "react";
-import { Dispatch } from "react";
 
-//----------> useEffect is introduced here as latest feature for update login local storage/global state even after page refresh
+// 1 create context
+export const AuthContext = createContext(undefined as any);
+// _______________________________________________
 
-// FIRST API EXPORT----
-
-type ActionProps = {
-  type: string;
-  payload: string;
-};
-type DispatchProps = {
-  dispatch: Dispatch<ActionProps>;
-};
-
-type AuthType = "LOGIN" | "LOGOUT";
-
-// FIRST API EXPORT --
-export const AuthContext = createContext<AuthType | null>(null);
-
-// SECOND API EXPORT----
-export const authReducer = (state, action) => {
+// 4 useReducer pure function after 3 context pillars.
+export const AuthReducer = (state: any, action: any) => {
   switch (action.type) {
     case "LOGIN":
-      return { user: action.payload };
+      return {
+        user: action.payload,
+      };
     case "LOGOUT":
-      return { user: null };
+      return {
+        user: null,
+      };
     default:
       return state;
   }
 };
 
-// 3RD API EXPORT----
-export const AuthContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(authReducer, {
+// 2 create context provider & establish use reducer
+export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
+  const [state, dispatch] = useReducer(AuthReducer, {
     user: null,
   });
+  // _______________________________________________
 
-  useEffect(() => {
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      const parsedUser = JSON.parse(storedUser);
-      // const user = JSON.parse(localStorage.getItem("user"));
-
-      dispatch({ type: "LOGIN", payload: parsedUser.data.email });
-    }
-  }, []);
-
-  console.log("AuthContext state:", state);
-
+  // 3 create context aka return..
   return (
     <AuthContext.Provider value={{ ...state, dispatch }}>
       {children}

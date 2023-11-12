@@ -23,7 +23,9 @@ const queryClient = new QueryClient();
 
 // Skeletal is grid system, with box classname:
 
+// GO FUCK buggy react context,, use java old style for auth/
 const App = () => {
+  console.log("Hello from App");
   const [user, setUser] = useState(false);
 
   useEffect(() => {
@@ -33,7 +35,7 @@ const App = () => {
     } else {
       setUser(false);
     }
-  }, [user]);
+  }, [user, redirect]);
 
   const Layout = () => {
     return (
@@ -63,27 +65,27 @@ const App = () => {
 
     {
       path: "/",
-      element: <Layout />,
+      element: user ? <Layout /> : <Navigate to="login" />,
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: user ? <Home /> : <Navigate to="login" />,
         },
         {
           path: "/users",
-          element: <Users />,
+          element: user ? <Users /> : <Navigate to="login" />,
         },
         {
           path: "/products",
-          element: <Products />,
+          element: user ? <Products /> : <Navigate to="login" />,
         },
         {
           path: "/user/:id",
-          element: <User />,
+          element: user ? <User /> : <Navigate to="login" />,
         },
         {
           path: "/product/:id",
-          element: <Product />,
+          element: user ? <Product /> : <Navigate to="login" />,
         },
       ],
     },
@@ -94,7 +96,7 @@ const App = () => {
 
 export default App;
 
-// conditional logic if == ?, then <component>, else Navigate to </>
+// conditional logic user ?, then <component>, else Navigate to = string </>
 // in conditional routing, always use Navigate to "/link" as else instead of passive <component> like jsx stuff.
 
 // JSON.parse(localStorage.getItem("user") as string).data.email ==

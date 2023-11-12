@@ -1,4 +1,21 @@
 
+
+
+
+  // const storedUser = localStorage.getItem("user")
+
+    // const parsedUser = storedUser ? JSON.parse(storedUser) : null
+    // const userEmail = parsedUser.data?.email;
+    // const userImg = parsedUser?.data?.picture;
+    // const userName = parsedUser?.data?.name;
+
+
+    const userEmail = JSON.parse(localStorage.getItem("user") || "{}").data?.email
+    const userImg = JSON.parse(localStorage.getItem("user") || "{}").data?.picture
+    const userName = JSON.parse(localStorage.getItem("user") || "{}").data?.name
+ 
+
+
 export const menu = [
     {
       id: 1,
@@ -116,13 +133,14 @@ export const menu = [
     },
     {
       id: 6,
-      title: "logout",
+      title: "DOC",
       listItems: [
         {
           id: 1,
-          title: "Logout",
+          title: "More",
           url: "/logout",
           icon: "log.svg",
+          onclick: true
         },
         
       ],
@@ -130,54 +148,75 @@ export const menu = [
   ];
   
   export const topDealUsers = [
+    
     {
       id: 1,
-      img: "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      username: "Elva McDonald",
-      email: "elva@gmail.com",
-      amount: "3.668",
+      img: userImg,
+      username:  `${userName}`,
+      email:  userEmail,
+      amount: "90,000",
+      verified: "twitter.svg"
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Linnie Nelson",
-      email: "linnie@gmail.com",
-      amount: "3.256",
+      img: "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      username: "Elva McDonald",
+      email: "elva@gmail.com",
+      amount: "77,579",
+      verified: "twitter.svg"
     },
+    
+    
+    
+    
     {
       id: 3,
-      img: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Brent Reeves",
-      email: "brent@gmail.com",
-      amount: "2.998",
+      img: "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      username: "Elva McDonald",
+      email: "elva@gmail.com",
+      amount: "76,390",
+      verified: "twitter.svg"
     },
     {
       id: 4,
-      img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Adeline Watson",
-      email: "adeline@gmail.com",
-      amount: "2.512",
+      img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      username: "Linnie Nelson",
+      email: "linnie@gmail.com",
+      amount: "76,790",
+      verified: "twitter.svg"
     },
     {
       id: 5,
-      img: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Juan Harrington",
-      email: "juan@gmail.com",
-      amount: "2.134",
+      img: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      username: "Brent Reeves",
+      email: "brent@gmail.com",
+      amount: "65,699",
+      verified: "twitter.svg"
     },
     {
       id: 6,
+      img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      username: "Adeline Watson",
+      email: "adeline@gmail.com",
+      amount: "63,099",
+      verified: "twitter.svg"
+    },
+   
+    {
+      id: 8,
       img: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1600",
       username: "Augusta McGee",
       email: "augusta@gmail.com",
-      amount: "1.932",
+      amount: "59,000",
+      verified: "twitter.svg"
     },
     {
-      id: 7,
+      id: 9,
       img: "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1600",
       username: "Angel Thomas",
       email: "angel@gmail.com",
-      amount: "1.560",
+      amount: "55,978",
+      verified: "twitter.svg"
     },
   ];
   
