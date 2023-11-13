@@ -4,8 +4,10 @@ import { useEffect } from "react";
 import axios from "axios";
 import { useGoogleLogin } from "@react-oauth/google";
 
-const GoogleLoginButton = () => {
-  const login = useGoogleLogin({
+const LoginComponent = () => {
+  const github_login = console.log("github log");
+
+  const google_login = useGoogleLogin({
     // let google api handle call request at their backend
     // res: get res from GOOOGLE if succeded
     onSuccess: async (response) => {
@@ -62,10 +64,29 @@ const GoogleLoginButton = () => {
   }, []);
 
   return (
-    <div className="login">
-      <button onClick={() => login()}>Sign in Google</button>
+    <div className="containerLogin">
+      <img
+        src="https://images.unsplash.com/photo-1574218732130-6b19257fd9db?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div className="form">
+        <div className="textStuff">
+          <span className="title">Single Sign-On </span>
+          <span className="desc">Login to your account to continue</span>
+        </div>
+        <div className="socialButton">
+          <button onClick={() => google_login()}>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+            <span className="google">Google</span>
+          </button>
+          <button onClick={() => github_login}>
+            <img src="github.svg" />
+            <span className="github">Github</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default GoogleLoginButton;
+export default LoginComponent;

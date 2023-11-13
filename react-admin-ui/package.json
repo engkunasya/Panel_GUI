@@ -16,6 +16,7 @@
     "@mui/material": "^5.14.7",
     "@mui/x-data-grid": "^6.12.1",
     "@react-oauth/google": "^0.11.1",
+    "@react-three/fiber": "^8.15.10",
     "@reduxjs/toolkit": "^1.9.7",
     "@tanstack/react-query": "^4.35.3",
     "axios": "^1.6.0",
@@ -27,11 +28,13 @@
     "recharts": "^2.8.0",
     "redux": "^4.2.1",
     "sass": "^1.66.1",
+    "three": "^0.158.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "@types/three": "^0.158.2",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "@vitejs/plugin-react": "^4.0.1",

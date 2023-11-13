@@ -10,7 +10,7 @@ import {
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
-import GoogleLoginButton from "./pages/login/Login";
+import LoginComponent from "./pages/login/Login";
 import "./styles/global.scss";
 import User from "./pages/user/User";
 import Users from "./pages/users/UserS";
@@ -60,7 +60,7 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/login",
-      element: user ? <Navigate to="/" /> : <GoogleLoginButton />,
+      element: user ? <Navigate to="/" /> : <LoginComponent />,
     },
 
     {

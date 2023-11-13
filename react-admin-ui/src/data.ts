@@ -157,23 +157,16 @@ export const menu = [
       amount: "90,000",
       verified: "twitter.svg"
     },
+    ,
+    
+    
+    
+    
     {
       id: 2,
-      img: "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      username: "Elva McDonald",
-      email: "elva@gmail.com",
-      amount: "77,579",
-      verified: "twitter.svg"
-    },
-    
-    
-    
-    
-    {
-      id: 3,
-      img: "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      username: "Elva McDonald",
-      email: "elva@gmail.com",
+      img: "https://lh3.googleusercontent.com/a/ACg8ocL1g9BQuyxruVZUYRhrjwK91xubzpvWf_-xKosthjTvRwI=s96-c",
+      username: "Engku Nasya",
+      email: "engkunasya@gmail.com",
       amount: "76,390",
       verified: "twitter.svg"
     },
