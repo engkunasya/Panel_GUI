@@ -26,9 +26,7 @@
           border-radius: 50%;
           object-fit: cover;
 
-          @include xxl{
-            display: none;
-          }
+         
           @include lg{
             display: block;
           }
@@ -49,15 +47,13 @@
           .verifiedTick{
             width: 16px;
             height: 16px;
-            margin-left: 10px;
+            margin-left: 5px;
 
           }}
           .email {
             font-size: 12px;
 
-            @include xxl{
-              display: none;
-            }
+          
             @include lg{
               display: block;
             }
