@@ -1,0 +1,217 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+
+//ALWAYS REMEBER THAT flex: 1 or flex: (Number) is a "child sizing property" from the flex-displayed parent
+.project-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    height: 100vh;
+
+   
+
+   max-width: 768px;
+   min-width: 480px;
+
+
+  
+
+.project-main1{
+    display: flex;
+    flex: 1;
+  
+    border-radius: 10px;
+    border: 2px solid $soft-bg;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+ 
+
+
+    .ev_car{
+        display: flex;
+      
+        
+        position: relative;
+        max-width: 100%;
+        min-width: 300px;
+        height: auto;
+        position:relative;
+        animation: blackWhiteAnimation 2s infinite alternate;
+        border-radius: 10px;
+        @keyframes blackWhiteAnimation {
+            0% {
+              filter: grayscale(0%);
+            }
+            100% {
+              filter: grayscale(75%);
+            }
+          }
+
+    }
+    .ev_component{
+
+        position: absolute;
+        margin-bottom: 45px;
+        display: flex;
+        cursor: pointer;
+        
+
+    
+
+      
+        
+      
+        
+        .buttonn{
+            
+            // border-bottom: 1.5px solid white ;
+            padding-inline: 15px;
+            padding-block: 5px;
+         
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+       
+            background-color: transparent;
+            color: whitesmoke;
+            font-size: small;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-weight: semibold;
+
+            &:hover{
+                
+                color: white
+                
+
+            }
+            
+
+       @include lg {
+        font-size: small;
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+
+       @include md {
+        font-size: xx-small;
+        margin-left: 11px;
+        margin-right: 11px;
+    }     
+        }
+    }
+  
+
+}
+.project-main2{
+    height: 100%;
+    min-height: 331.1px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  
+ 
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+       
+        .supplyA{
+
+           flex:2;
+           border-radius: 10px;
+           border: 2px solid $soft-bg;
+           height: 100%;
+           display: flex;
+            justify-content: center;
+           align-items: center;
+           z-index: 2;
+
+           .photoOps{
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+           }
+           
+      
+        }
+
+
+        .supplyB{
+
+            flex:1;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 2px solid $soft-bg;
+            height: 100%;
+            display: flex;
+            justify-content: end;
+           align-items: start;
+
+           .view{
+            width: 100%;
+           }
+
+           .proprietary{
+
+            font-size: small;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            color: silver;
+            &:hover{
+                
+                color: white
+                
+
+            }
+
+            @include md {
+                font-size: small;
+            }
+            
+            @include sm {
+                font-size: x-small;
+            }
+           }
+       
+         }
+        
+        
+    
+}
+
+
+
+.project-main3{
+    height: 100%;
+    display: flex;
+    flex: 1;
+  
+    border-radius: 10px;
+    border: 2px solid $soft-bg;
+    justify-content: center;
+    align-items: center;
+    
+
+    .chart{
+
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+}
+
+.recharts-default-legend{
+
+    display: flex;
+   justify-content: space-around;
+
+
+
+}

@@ -23,15 +23,19 @@ export const menu = [
       listItems: [
         {
           id: 1,
-          title: "Homepage",
+          title: "Home",
           url: "/",
           icon: "home.svg",
+          pulse: false,
+          new: false
         },
         {
           id: 2,
-          title: "Profile",
-          url: "/",
-          icon: "user.svg",
+          title: "Instruments",
+          url: "/project",
+          icon: "chart.svg",
+          pulse: true,
+          new: true
         },
       ],
     },
@@ -41,27 +45,35 @@ export const menu = [
       listItems: [
         {
           id: 1,
-          title: "Users",
-          url: "/users",
+          title: "Technicians",
+          url: "/engine",
           icon: "user.svg",
+          pulse: false,
+          new: false
         },
         {
           id: 2,
           title: "Products",
           url: "/products",
           icon: "product.svg",
+          pulse: false,
+          new: false
         },
         {
           id: 3,
-          title: "Orders",
+          title: "Orders 🔒",
           url: "/",
           icon: "order.svg",
+          pulse: false,
+          new: false
         },
         {
           id: 4,
-          title: "Posts",
+          title: "Import 🔒",
           url: "/",
           icon: "post2.svg",
+          pulse: false,
+          new: false
         },
       ],
     },
@@ -71,27 +83,28 @@ export const menu = [
       listItems: [
         {
           id: 1,
-          title: "Elements",
+          title: "Investors 🔒",
           url: "/",
           icon: "element.svg",
+          pulse: false,
+          new: false
         },
+
         {
           id: 2,
-          title: "Notes",
+          title: "Forms 🔒",
           url: "/",
-          icon: "note.svg",
+          icon: "form.svg",
+          pulse: false,
+          new: false
         },
         {
           id: 3,
-          title: "Forms",
-          url: "/",
-          icon: "form.svg",
-        },
-        {
-          id: 4,
-          title: "Calendar",
+          title: "Booking 🔒",
           url: "/",
           icon: "calendar.svg",
+          pulse: false,
+          new: false
         },
       ],
     },
@@ -101,15 +114,19 @@ export const menu = [
       listItems: [
         {
           id: 1,
-          title: "Settings",
+          title: "Settings 🔒",
           url: "/",
           icon: "setting.svg",
+          pulse: false,
+          new: false
         },
         {
           id: 2,
-          title: "Backups",
+          title: "Backups 🔒",
           url: "/",
           icon: "backup.svg",
+          pulse: false,
+          new: false
         },
       ],
     },
@@ -122,12 +139,16 @@ export const menu = [
           title: "Charts",
           url: "/",
           icon: "chart.svg",
+          pulse: false,
+          new: false
         },
         {
           id: 2,
           title: "Logs",
           url: "/",
           icon: "log.svg",
+          pulse: false,
+          new: false
         },
       ],
     },
@@ -137,10 +158,12 @@ export const menu = [
       listItems: [
         {
           id: 1,
-          title: "More",
-          url: "/logout",
+          title: "More 🔒",
+          url: "",
           icon: "log.svg",
-          onclick: true
+          onclick: true,
+          pulse: false,
+          new: false
         },
         
       ],
@@ -153,8 +176,8 @@ export const menu = [
       id: 1,
       img: userImg,
       username:  `${userName}`,
-      email:  userEmail,
-      amount: "90,000",
+      email:  "Administrator",
+      amount: "100,000",
       verified: "twitter.svg"
     },
     ,
@@ -164,50 +187,50 @@ export const menu = [
     
     {
       id: 2,
-      img: "https://lh3.googleusercontent.com/a/ACg8ocL1g9BQuyxruVZUYRhrjwK91xubzpvWf_-xKosthjTvRwI=s96-c",
-      username: "Engku Nasya",
-      email: "engkunasya@gmail.com",
+      img: "https://www.thefamouspeople.com/profiles/images/nikola-tesla-11.jpg",
+      username: "Nash",
+      email: "Tesla-X",
       amount: "76,390",
       verified: "twitter.svg"
     },
     {
       id: 4,
-      img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      img: "https://assets.raribleuserdata.com/prod/v1/image/t_image_big/aHR0cHM6Ly9pcGZzLmlvL2lwZnMvUW1ZMmF4ZU0zZWNYWWpQM3ZFaFl6N0V6Y2hyakZkZmhVUTljWUVNTGs0OTQ3by9pbWFnZS5qcGVn",
       username: "Linnie Nelson",
-      email: "linnie@gmail.com",
+      email: "Tesla-S",
       amount: "76,790",
       verified: "twitter.svg"
     },
     {
       id: 5,
-      img: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      img: "https://beincrypto.com/wp-content/uploads/2023/08/ciaran-lyons-avatar.png",
       username: "Brent Reeves",
-      email: "brent@gmail.com",
+      email: "BMW-EV-i8",
       amount: "65,699",
       verified: "twitter.svg"
     },
     {
       id: 6,
-      img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      img: "https://image.lexica.art/full_webp/5f682587-ad53-44ef-9067-8c3bf1ed48a6",
       username: "Adeline Watson",
-      email: "adeline@gmail.com",
+      email: "Alphard-EV-77",
       amount: "63,099",
       verified: "twitter.svg"
     },
    
     {
       id: 8,
-      img: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      img: "https://geekxgirls.com/images/cosplay89/tesla-cat-girl-cosplay-04.jpg",
       username: "Augusta McGee",
-      email: "augusta@gmail.com",
+      email: "Mini Cooper-EV",
       amount: "59,000",
       verified: "twitter.svg"
     },
     {
       id: 9,
-      img: "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      img: "https://d18fr84zq3fgpm.cloudfront.net/charbel-lebanese-gay-escort-in-beirut-4138150_listing.jpg",
       username: "Angel Thomas",
-      email: "angel@gmail.com",
+      email: "Geely-EV",
       amount: "55,978",
       verified: "twitter.svg"
     },
@@ -216,8 +239,8 @@ export const menu = [
   export const chartBoxUser = {
     color: "#8884d8",
     icon: "/userIcon.svg",
-    title: "Total Users",
-    number: "11.238",
+    title: "Total Leads",
+    number: "11238",
     dataKey: "users",
     percentage: 45,
     chartData: [
@@ -234,8 +257,8 @@ export const menu = [
   export const chartBoxProduct = {
     color: "skyblue",
     icon: "/productIcon.svg",
-    title: "Total Products",
-    number: "238",
+    title: "Total Buyers",
+    number: "3238",
     dataKey: "products",
     percentage: 21,
     chartData: [
@@ -252,7 +275,7 @@ export const menu = [
     color: "teal",
     icon: "/revenueIcon.svg",
     title: "Total Revenue",
-    number: "$56.432",
+    number: "$32M",
     dataKey: "revenue",
     percentage: -12,
     chartData: [
@@ -268,8 +291,8 @@ export const menu = [
   export const chartBoxConversion = {
     color: "gold",
     icon: "/conversionIcon.svg",
-    title: "Total Ratio",
-    number: "2.6",
+    title: "Ratio L/B",
+    number: "3.5",
     dataKey: "ratio",
     percentage: 12,
     chartData: [
@@ -290,31 +313,31 @@ export const menu = [
     chartData: [
       {
         name: "Sun",
-        profit: 4000,
+        profit: 41300,
       },
       {
         name: "Mon",
-        profit: 3000,
+        profit: 33400,
       },
       {
         name: "Tue",
-        profit: 2000,
+        profit: 23400,
       },
       {
         name: "Wed",
-        profit: 2780,
+        profit: 25678,
       },
       {
         name: "Thu",
-        profit: 1890,
+        profit: 16890,
       },
       {
         name: "Fri",
-        profit: 2390,
+        profit: 26390,
       },
       {
         name: "Sat",
-        profit: 3200,
+        profit: 32300,
       },
     ],
   };
@@ -322,35 +345,35 @@ export const menu = [
   export const barChartBoxVisit = {
     title: "Total Visit",
     color: "#FF8042",
-    dataKey: "born",
-    chartData: [
+    dataKey: "hq",
+   chartData: [
       {
         name: "Rania",
-        born: 12,
+        hq: 1200,
       },
       {
         name: "Icad",
-        born: 14,
+        hq: 1400,
       },
       {
         name: "Ilham",
-        born: 13,
+        hq: 1300,
       },
       {
         name: "Inara",
-        born: 15,
+        hq: 1500,
       },
       {
         name: "Hasya",
-        born: 17,
+        hq: 1700,
       },
       {
         name: "Raisya",
-        born: 17,
+        hq: 1700,
       },
       {
         name: "Fatih",
-        born: 21,
+        hq: 2100,
       },
     ],
   };

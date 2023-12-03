@@ -71,12 +71,14 @@ const LoginComponent = () => {
       />
       <div className="form">
         <div className="textStuff">
-          <span className="title">Single Sign-On </span>
-          <span className="desc">Login to your account to continue</span>
+          <span className="title">Clean Road, Clean Energy.</span>
+          <span className="desc">
+            Continue via OAuth <div className="border"></div>
+          </span>
         </div>
         <div className="socialButton">
           <button onClick={() => google_login()}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+            <img src="google.svg" />
             <span className="google">Google</span>
           </button>
           <button onClick={() => github_login}>

@@ -16,6 +16,8 @@ const Menu = () => {
             <Link to={listItem.url} className="listItem" key={listItem.id}>
               <img src={listItem.icon} alt="" />
               <span className="listItemTitle">{listItem.title}</span>
+              {listItem.pulse && <div className="pulse" />}
+              {listItem.new && <span className="new">NEW</span>}
             </Link>
           ))}
         </div>

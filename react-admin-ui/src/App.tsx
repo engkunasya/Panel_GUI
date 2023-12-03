@@ -18,6 +18,7 @@ import Product from "./pages/product/Product";
 import Products from "./pages/products/ProductS";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
+import Project from "./pages/project/Project";
 
 const queryClient = new QueryClient();
 
@@ -72,7 +73,7 @@ const App = () => {
           element: user ? <Home /> : <Navigate to="login" />,
         },
         {
-          path: "/users",
+          path: "/engine",
           element: user ? <Users /> : <Navigate to="login" />,
         },
         {
@@ -82,6 +83,10 @@ const App = () => {
         {
           path: "/user/:id",
           element: user ? <User /> : <Navigate to="login" />,
+        },
+        {
+          path: "/project",
+          element: user ? <Project /> : <Navigate to="login" />,
         },
         {
           path: "/product/:id",

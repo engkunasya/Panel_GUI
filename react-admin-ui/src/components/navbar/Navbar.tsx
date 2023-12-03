@@ -13,12 +13,14 @@ const Navbar = () => {
     <div className="navbar">
       <div className="logo">
         <img
-          src="https://user-images.githubusercontent.com/80636305/126576577-cb07ba84-a4fe-4d63-b43a-e7832c77483d.png"
-          alt=""
-          className="ether"
+          className="wheel"
+          src="/tyre.PNG"
+          alt="1588433178436"
+          width="40"
+          height="40"
         />
 
-        <span>{`${firstName}'s Ethereum`}</span>
+        <span>{` 🤘🏻  ${firstName} for  Clean Energy`}</span>
         {/* <img src="twitter.svg" alt="" className="tick" /> */}
       </div>
       <div className="icons">
