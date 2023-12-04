@@ -66,12 +66,12 @@ const LoginComponent = () => {
   return (
     <div className="containerLogin">
       <img
-        src="https://images.unsplash.com/photo-1574218732130-6b19257fd9db?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://images.unsplash.com/photo-1606143705384-19989b1cf91c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt=""
       />
       <div className="form">
         <div className="textStuff">
-          <span className="title">Clean Road, Clean Energy.</span>
+          <span className="title">Clean Energy, Clean City.</span>
           <span className="desc">
             Continue via OAuth <div className="border"></div>
           </span>
@@ -82,8 +82,8 @@ const LoginComponent = () => {
             <span className="google">Google</span>
           </button>
           <button onClick={() => github_login}>
-            <img src="github.svg" />
-            <span className="github">Github</span>
+            <img src="apple.svg" />
+            <span className="apple">Apple</span>
           </button>
         </div>
       </div>

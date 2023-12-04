@@ -18,9 +18,10 @@ const Navbar = () => {
           alt="1588433178436"
           width="40"
           height="40"
+          loading="lazy"
         />
 
-        <span>{` 🤘🏻  ${firstName} for  Clean Energy`}</span>
+        <span>{` Go Electric > ${firstName}'s Account`}</span>
         {/* <img src="twitter.svg" alt="" className="tick" /> */}
       </div>
       <div className="icons">

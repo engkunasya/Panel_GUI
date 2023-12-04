@@ -193,17 +193,21 @@ const Project = () => {
 
   // HANDLE CLICK AND STATE
   const [Image, setImage] = useState<string>(LithiumImg);
+
   const [data, setData] = useState(dataGraph.dataL);
 
   //LITHIUM Handling
   const handleClickL = (event: React.MouseEvent<HTMLElement>) => {
+    setIsLoading(true);
     setImage(event.currentTarget.id);
     setData(dataGraph.dataL);
     console.log(Image);
+    setIsLoading(true);
   };
 
   //IOT Handling
   const handleClickI = (event: React.MouseEvent<HTMLElement>) => {
+    setIsLoading(true);
     setImage(event.currentTarget.id);
     setData(dataGraph.dataI);
     console.log(Image);
@@ -211,16 +215,20 @@ const Project = () => {
 
   //CABLING Handling
   const handleClickC = (event: React.MouseEvent<HTMLElement>) => {
+    setIsLoading(true);
     setImage(event.currentTarget.id);
     setData(dataGraph.dataC);
     console.log(Image);
+    setIsLoading(true);
   };
 
   //MOTOR Handling
   const handleClickM = (event: React.MouseEvent<HTMLElement>) => {
+    setIsLoading(true);
     setImage(event.currentTarget.id);
     setData(dataGraph.dataM);
     console.log(Image);
+    setIsLoading(true);
   };
 
   return (
@@ -231,8 +239,9 @@ const Project = () => {
           src="https://knaufautomotive.com/wp-content/uploads/2020/09/shutterstock_732827443.jpg"
         />
         <div className="ev_component">
+          {/* NAVIGATION SUB-HEADER*/}
           <div
-            className="buttonn"
+            className="buttonn b1"
             onClick={handleClickL}
             id={LithiumImg}
             style={
@@ -248,7 +257,7 @@ const Project = () => {
             LITHIUM PACK
           </div>
           <div
-            className="buttonn"
+            className="buttonn b2"
             onClick={handleClickI}
             id={IOTImg}
             style={
@@ -264,7 +273,7 @@ const Project = () => {
             IOT HARDWARE
           </div>
           <div
-            className="buttonn"
+            className="buttonn b3"
             onClick={handleClickC}
             id={CablingImg}
             style={
@@ -280,7 +289,7 @@ const Project = () => {
             CABLING
           </div>
           <div
-            className="buttonn"
+            className="buttonn b4"
             onClick={handleClickM}
             id={MotorImg}
             style={
@@ -300,7 +309,7 @@ const Project = () => {
       <div className="project-main2">
         {/* HANDLE BUFFERING UI */}
         <div className="supplyA">
-          {isLoading && <CircularProgress />}
+          {isLoading && <CircularProgress sx={{ color: "white" }} />}
 
           <img src={Image} className="photoOps" onLoad={handleImageLoad} />
         </div>
@@ -315,7 +324,7 @@ const Project = () => {
             style={{ cursor: "pointer", position: "absolute" }}
             className="proprietary"
           >
-            View Proprietary →
+            <span className="hovering-text"> View Proprietary → </span>
           </div>
         </div>
       </div>

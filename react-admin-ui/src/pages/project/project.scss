@@ -85,8 +85,8 @@
 
             &:hover{
                 
-                color: white
-                
+                color: white;
+              
 
             }
             
@@ -103,6 +103,24 @@
         margin-right: 11px;
     }     
         }
+
+
+        .b1 {  &:hover{     
+           font-size: 14px;
+        }
+        }
+        .b2 {  &:hover{     
+            font-size: 14px;
+         }
+         }
+         .b3 {  &:hover{     
+            font-size: 14px;
+         }
+         }
+         .b4 {  &:hover{     
+            font-size: 14px;
+         }
+         }
     }
   
 
@@ -164,8 +182,8 @@
             color: silver;
             &:hover{
                 
-                color: white
-                
+                color: white;
+                margin-right: 25px;
 
             }
 
@@ -176,6 +194,10 @@
             @include sm {
                 font-size: x-small;
             }
+           }
+           .hovering-text{
+            &:hover{margin-left: 7px; }
+
            }
        
          }
