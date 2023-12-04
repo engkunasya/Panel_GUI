@@ -23,7 +23,7 @@ const LoginComponent = () => {
         // -------------- res1: send google token to localstorage for local caching
         localStorage.setItem("user", JSON.stringify(res));
         if (res) {
-          location.reload();
+          window.location.replace("/");
         }
 
         // -------------- res2: send google token/ data to mongodb for signup or login.

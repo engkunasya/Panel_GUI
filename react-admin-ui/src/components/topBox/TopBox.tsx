@@ -6,19 +6,19 @@ const TopBox = () => {
     <div className="topBox">
       <h1> Recent Deposits</h1>
       <div className="list">
-        {topDealUsers.map((user) => (
-          <div className="listItem" key={user.id}>
+        {topDealUsers.map((user?) => (
+          <div className="listItem" key={user?.id}>
             <div className="user">
-              <img src={user.img} alt="" className="userimg" />
+              <img src={user?.img} alt="" className="userimg" />
               <div className="userTexts">
                 <div className="userVerified">
-                  <span className="userName">{user.username}</span>
-                  <img src={user.verified} alt="" className="verifiedTick" />
+                  <span className="userName">{user?.username}</span>
+                  <img src={user?.verified} alt="" className="verifiedTick" />
                 </div>
-                <span className="email">{user.email}</span>
+                <span className="email">{user?.email}</span>
               </div>
             </div>
-            <span className="amount">${user.amount}</span>
+            <span className="amount">${user?.amount}</span>
           </div>
         ))}
       </div>

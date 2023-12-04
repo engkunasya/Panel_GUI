@@ -10,7 +10,7 @@
     // const userName = parsedUser?.data?.name;
 
 
-    const userEmail = JSON.parse(localStorage.getItem("user") || "{}").data?.email
+   
     const userImg = JSON.parse(localStorage.getItem("user") || "{}").data?.picture
     const userName = JSON.parse(localStorage.getItem("user") || "{}").data?.name
  

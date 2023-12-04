@@ -80,7 +80,7 @@ const Products = () => {
       ) : (
         <DataTable slug="products" columns={columns} rows={data} />
       )} */}
-      {open && <Add slug="product" columns={columns} setOpen={setOpen} />}
+      {open && <Add slug="product" setOpen={setOpen} />}
     </div>
   );
 };
