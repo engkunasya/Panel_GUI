@@ -1,11 +1,11 @@
-import BarChartBox from "../../components/Charts/barChartBox/BarChartBox";
+// import BarChartBox from "../../components/Charts/barChartBox/BarChartBox";
 import BigChartBox from "../../components/Charts/areaChartBox/AreaChartBox";
 import ChartBox from "../../components/Charts/lineChartBox/ChartBox";
 import PieChartBox from "../../components/Charts/pieChartBox/PieChartBox";
 import TopBox from "../../components/topBox/TopBox";
 import {
-  barChartBoxRevenue,
-  barChartBoxVisit,
+  // barChartBoxRevenue,
+  // barChartBoxVisit,
   chartBoxConversion,
   chartBoxProduct,
   chartBoxRevenue,
@@ -37,12 +37,12 @@ const Home = () => {
       <div className="box box7">
         <BigChartBox />
       </div>
-      <div className="box box8">
+      {/* <div className="box box8">
         <BarChartBox {...barChartBoxVisit} />
       </div>
       <div className="box box9">
         <BarChartBox {...barChartBoxRevenue} />
-      </div>
+      </div> */}
     </div>
   );
 };

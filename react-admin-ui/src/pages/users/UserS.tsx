@@ -64,7 +64,7 @@ const Users = () => {
 
   // PROMISE BLOCK FUNCTION
   const queryFn = async () => {
-    const response = await fetch("http://localhost:8800/user/");
+    const response = await fetch("https://ev-supercharge.onrender.com/user/");
     const dataApi = await response.json();
 
     const mappedData = dataApi.map((item: any) => ({

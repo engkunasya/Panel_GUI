@@ -48,7 +48,7 @@ const LoginComponent = () => {
 
       const signUp = async () => {
         try {
-          await axios.post("http://localhost:8800/user/signup", {
+          await axios.post("https://ev-supercharge.onrender.com/user/signup", {
             email: parsedUser.data.email,
             name: parsedUser.data.name,
             picture: parsedUser.data.picture,

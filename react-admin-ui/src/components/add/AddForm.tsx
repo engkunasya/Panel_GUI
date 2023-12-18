@@ -17,7 +17,7 @@ const AddFormm = (props: Props) => {
   const mutation = useMutation({
     mutationFn: () => {
       // Alwayssssss double check url religiously, http: SLASH and SLUG !!!!
-      return fetch(`http://localhost:8800/${props.slug}`, {
+      return fetch(`https://ev-supercharge.onrender.com/${props.slug}`, {
         method: "post",
         headers: {
           Accept: "application/json",

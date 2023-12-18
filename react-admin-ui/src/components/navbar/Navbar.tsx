@@ -7,7 +7,7 @@ const Navbar = () => {
     ?.picture;
   // const lastName = JSON.parse(localStorage.getItem("user") || "{}").data
   //   ?.family_name;
-  const fullName = JSON.parse(localStorage.getItem("user") || "{}").data?.name;
+  // const fullName = JSON.parse(localStorage.getItem("user") || "{}").data?.name;
 
   return (
     <div className="navbar">
@@ -29,12 +29,12 @@ const Navbar = () => {
         <img src="/app.svg" alt="" className="icon" />
         <img src="/expand.svg" alt="" className="icon" />
         <div className="notification">
-          <img src="/notifications.svg" alt="" />
-          <span>1</span>
+          {/* <img src="/notifications.svg" alt="" />
+          <span>1</span> */}
         </div>
         <div className="user">
           <img src={userImg} alt="" />
-          <span>{fullName}</span>
+          {/* <span>{fullName}</span> */}
         </div>
         <img src="/settings.svg" alt="" className="icon" />
       </div>

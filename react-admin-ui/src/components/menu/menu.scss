@@ -2,6 +2,9 @@
 @import "../../styles/responsive.scss";
 
 .menu {
+  position: sticky;
+  top: 60px;
+ 
   .Parentitem {
     display: flex;
     flex-direction: column;

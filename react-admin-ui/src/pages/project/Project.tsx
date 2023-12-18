@@ -309,7 +309,12 @@ const Project = () => {
       <div className="project-main2">
         {/* HANDLE BUFFERING UI */}
         <div className="supplyA">
-          {isLoading && <CircularProgress sx={{ color: "white" }} />}
+          {isLoading && (
+            <CircularProgress
+              sx={{ color: "white" }}
+              style={{ position: "absolute" }}
+            />
+          )}
 
           <img src={Image} className="photoOps" onLoad={handleImageLoad} />
         </div>

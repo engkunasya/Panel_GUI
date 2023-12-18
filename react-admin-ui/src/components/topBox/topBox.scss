@@ -1,6 +1,9 @@
 @import "../../styles/responsive.scss";
 
 .topBox {
+  overflow-y: scroll;
+  padding-right: 10px;
+  height: 100%;
   h1 {
     margin-bottom: 20px;
 
@@ -10,6 +13,7 @@
   }
 
   .list {
+ 
     .listItem {
       display: flex;
       align-items: center;

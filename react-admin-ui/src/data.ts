@@ -226,14 +226,7 @@ export const menu = [
       amount: "59,000",
       verified: "twitter.svg"
     },
-    {
-      id: 9,
-      img: "https://d18fr84zq3fgpm.cloudfront.net/charbel-lebanese-gay-escort-in-beirut-4138150_listing.jpg",
-      username: "Angel Thomas",
-      email: "Geely-EV",
-      amount: "55,978",
-      verified: "twitter.svg"
-    },
+   
   ];
   
   export const chartBoxUser = {

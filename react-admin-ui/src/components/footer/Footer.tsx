@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <span></span>
-      <span>© Poseidon Dashboard</span>
+      {/* <span>© EV 2024</span> */}
     </div>
   );
 };

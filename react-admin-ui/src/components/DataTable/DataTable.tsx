@@ -15,7 +15,7 @@ const DataTable = (props: Props) => {
   const queryClient = useQueryClient();
   const mutation = useMutation({
     mutationFn: (_id: string) => {
-      return fetch(`http://localhost:8800/${props.slug}/${_id}`, {
+      return fetch(`https://ev-supercharge.onrender.com/${props.slug}/${_id}`, {
         method: "delete",
       });
     },
