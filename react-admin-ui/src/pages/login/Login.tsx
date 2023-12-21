@@ -71,8 +71,8 @@ const LoginComponent = () => {
       />
       <div className="form">
         <div className="textStuff">
-          <span className="title">Free City from</span>
-          <span className="title"> Gas.</span>
+          <span className="title">Go EV,</span>
+          <span className="title"> 0% Carbon.</span>
           <span className="desc">Continue via OAuth</span>
         </div>
         <div className="socialButton">
