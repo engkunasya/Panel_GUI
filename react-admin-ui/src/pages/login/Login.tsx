@@ -71,10 +71,9 @@ const LoginComponent = () => {
       />
       <div className="form">
         <div className="textStuff">
-          <span className="title">Clean Energy, Clean City.</span>
-          <span className="desc">
-            Continue via OAuth <div className="border"></div>
-          </span>
+          <span className="title">Free City from</span>
+          <span className="title"> Gas.</span>
+          <span className="desc">Continue via OAuth</span>
         </div>
         <div className="socialButton">
           <button onClick={() => google_login()}>
